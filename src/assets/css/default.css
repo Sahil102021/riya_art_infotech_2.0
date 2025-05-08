@@ -1,0 +1,47 @@
+.main-container {
+    width: calc(var(--container-size) - 20px);
+    margin: 0 auto;
+    padding: 0 10px;
+}
+.font-primary {
+    font-family: var(--font-primary);
+}
+.font-secondary {
+    font-family: var(--font-secondary);
+}
+.bg-primary {
+    background-color: var(--bg-primary);
+}
+.line-clamp-5{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 5;
+    overflow: hidden;
+}
+.font-size-xxs {
+    font-size : 14px;
+}
+.font-size-xs {
+    font-size : 16px;
+}
+.font-size-sm {
+    font-size : 18px;
+}
+.font-size-md {
+    font-size : 20px;
+}
+.font-size-lg {
+    font-size : 24px;
+}
+.font-size-xl {
+    font-size : 28px;
+}
+.font-size-2xl {
+    font-size : 32px;
+}
+.font-size-3xl {
+    font-size : 64px;
+}
+.font-size-4xl {
+    font-size : 72px;
+}
