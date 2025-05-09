@@ -23,7 +23,7 @@ const Header = () => {
   };
 
   return (
-    <header className="w-full bg-[var(--bg-primary-transpant)]  fixed w-full z-30 top-0 border-b border-gray-200 backdrop-blur-md shadow-sm">
+    <header className="w-full bg-[var(--bg-primary-transpant)] fixed w-full z-30 top-0 border-b border-gray-200 backdrop-blur-md shadow-sm">
       <div className="main-container w-full h-full">
         <div className="w-full h-full mx-auto  flex items-center justify-between py-3">
           {/* Logo */}
@@ -33,7 +33,7 @@ const Header = () => {
               className="h-12"
               alt="Logo"
             />
-            <span className="text-2xl font-semibold  text-gray-900">
+            <span className="text-2xl font-semibold  text-white">
               Riya Art Infotech
             </span>
           </Link>
@@ -53,7 +53,7 @@ const Header = () => {
                 {!item.list ? (
                   <Link
                     to={item.link}
-                    className="text-gray-900 dark:text-white hover:text-blue-700 dark:hover:text-blue-50 transition font-primary "
+                    className="text-white font-szie-sm relative after:bg-white after:absolute after:h-1 after:w-0 after:bottom-[-5px] after:left-0 hover:after:w-full focus:after:w-full after:transition-all after:duration-300 cursor-pointer"
                   >
                     {item.name}
                   </Link>
@@ -61,7 +61,7 @@ const Header = () => {
                   <>
                     <button
                       onClick={() => toggleDropdown(item.id)}
-                      className="flex items-center gap-1 text-gray-900 dark:text-white hover:text-blue-700  transition font-primary" 
+                      className="flex items-center gap-1 text-white text-sm relative after:bg-white after:absolute after:h-1 after:w-0 after:bottom-[-5px] after:left-0 hover:after:w-full focus:after:w-full after:transition-all after:duration-300 cursor-pointer" 
                     >
                       {item.name}
                       <ChevronDown

@@ -6,12 +6,16 @@ import Services from "../componate/Services";
 import BannerHero from "../componate/BannerHero";
 import SwiperSection from "../componate/SwiperSection";
 import Price from "../componate/Price";
+import WavyAnimation from "../componate/ul/WavyAnimation/WavyAnimation";
+import ProductCardPanel from "../componate/ProductCardPanel";
+import AnimationCard from "../componate/ul/AnimationCard";
+import ArrowZoomCard from "../componate/ul/ArrowZoomCard";
 
 const Home = () => {
   return (
     <div>
       <section>
-        <div className="w-full py-24">
+        <div className="w-full pt-14 lg:pt-20 xl:pt-20 bg-gradient-to-b from-blue-300 to-bg-[#fff]">
           <div className="main-container">
             <Hero />
           </div>
@@ -19,7 +23,7 @@ const Home = () => {
       </section>
 
       <section>
-        <div className="w-full py-24">
+        <div className="w-full section-space">
           <div className="main-container">
             <Services />
           </div>
@@ -27,15 +31,39 @@ const Home = () => {
       </section>
 
       <section>
-        <div className="w-full py-24">
+        <div className="w-full section-space">
+          <div className="main-container">
+            <ArrowZoomCard />
+          </div>
+        </div>
+      </section>
+
+      {/* <section>
+        <div className="w-full section-space">
+          <div className="main-container">
+            <AnimationCard />
+          </div>
+        </div>
+      </section> */}
+
+      {/* <section>
+        <div className="w-full section-space">
           <div className="main-container">
             <BannerHero />
+          </div>
+        </div>
+      </section> */}
+
+      <section>
+        <div className="w-full section-space">
+          <div className="main-container">
+            <ProductCardPanel />
           </div>
         </div>
       </section>
 
       <section>
-        <div className="w-full py-24">
+        <div className="w-full section-space">
           <div className="main-container">
             <TimelineComponents />
           </div>
@@ -43,7 +71,7 @@ const Home = () => {
       </section>
 
       <section>
-        <div className="w-full py-24">
+        <div className="w-full section-space">
           <div className="main-container">
             <Stats_2 />
           </div>
@@ -51,7 +79,7 @@ const Home = () => {
       </section>
 
       <section>
-        <div className="w-full py-24">
+        <div className="w-full section-space">
           <div className="main-container">
             <SwiperSection />
           </div>
@@ -59,12 +87,13 @@ const Home = () => {
       </section>
 
       <section>
-        <div className="w-full py-24">
+        <div className="w-full section-space">
           <div className="main-container">
             <Price />
           </div>
         </div>
       </section>
+      
     </div>
   );
 };

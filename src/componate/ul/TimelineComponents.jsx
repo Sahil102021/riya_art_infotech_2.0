@@ -34,7 +34,7 @@ const TimelineComponents = () => {
           {/* Left Side */}
           <div className="col-span-12 sm:col-span-6">
             <div className="text-center sm:text-left mb-10 before:block before:w-24 before:h-3 before:mb-5 before:rounded-md before:mx-auto sm:before:mx-0 before:bg-[var(--bg-color-xi)]">
-              <h3 className="font-size-2xl font-semibold">Developmate Step</h3>
+              <h3 className="font-size-2xl font-semibold font-secondary tracking-wider ">Developmate Step</h3>
               <span className="font-size-xs font-bold tracking-wider uppercase text-gray-600">
                 All step height qualite
               </span>

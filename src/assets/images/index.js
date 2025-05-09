@@ -5,6 +5,7 @@ import logo4 from './logo/4.png';
 import logo5 from './logo/5.png';
 import logo6 from './logo/6.png';
 import Hero12 from './background/pngegg.png';
+import b_star from "./icon/b-star.png";''
 export {
     logo1,
     logo2,
@@ -13,4 +14,5 @@ export {
     logo5,
     logo6,
     Hero12,
+    b_star,
 }

@@ -1,6 +1,7 @@
 :root {
   --font-primary: "Manrope";
   --font-secondary: "Mauline";
+  --font-tertiary : "Ballega";
 
   --container-size: 1600px;
   --header-height: 80px;
@@ -11,5 +12,8 @@
   --bg-color-xi: #1f4699;
   --bg-color-xii: #1e1e58;
   --bg-color-xxi: #dfe8f1;
-  --bg-primary-transpant: #0d095018;
+  --bg-primary-transpant: #0d09504d;
+  --bg-light-blue : #eff7ff;
+
+  --section-space : 40px;
 }

@@ -20,12 +20,12 @@ const Services = () => {
       <div className="absolute inset-0 opacity-30 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-white/10 via-transparent to-transparent pointer-events-none" />
 
       <div className="relative z-10 max-w-6xl mx-auto text-center">
-        <h2 className="font-size-3xl font-secondary font-extrabold mb-2 sm:mb-12 tracking-tight text-[var(--bg-primary)]">
-            We Offer In Our Service :
+        <h2 className="font-size-3xl font-tertiary mb-2 md:mb-6 2xl:mb-12 tracking-tight text-[var(--bg-primary)]">
+            We Offer In Our Service 
         </h2>
 
         <motion.ul
-          className="grid sm:gap-2 sm:grid-cols-2 lg:grid-cols-3"
+          className="grid sm:gap-2 xs:grid-cols-2 lg:grid-cols-3"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
@@ -34,8 +34,8 @@ const Services = () => {
           {features.map((feature, index) => (
             <motion.li
               key={index}
-              className="flex items-center gap-3 p-1 hover:scale-[1.03]  transition-all duration-300"
-              whileHover={{ scale: 1.05 }}
+              className="flex items-center gap-2 sm:gap-3 p-1  transition-all duration-300"
+              
             >
               <span className="">{svgIcon.trueIcon}</span>
               <span className="font-size-sm text-black font-primary">{feature}</span>

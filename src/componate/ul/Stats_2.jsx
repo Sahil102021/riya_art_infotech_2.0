@@ -54,22 +54,32 @@ const Stats_2 = () => {
         viewport={{ once: true }}
         transition={{ duration: 0.6, ease: "easeOut" }}
       >
-        <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-800  mb-12">
-          Use Programing language
-        </h2>
+        <div className="text-center mb-2 md:mb-6 2xl:mb-12">
+          <h2 className="font-size-3xl font-tertiary">
+            Programing language
+          </h2>
+          <p className="font-size-xs text-gray-500">
+            Handpicked items crafted with care and creativity — perfect for
+            modern living
+          </p>
+        </div>
         <div className="flex flex-wrap justify-center gap-10 lg:justify-between">
           {techLogos.map((tech, index) => (
             <div
               key={index}
               className="relative group w-20 h-20 flex items-center justify-center rounded-xl shadow-lg hover:bg-[var(--bg-color-i)]  hover:scale-110 focus:scale-110 transition-all duration-300 cursor-pointer border border-transparent hover:border-[var(--bg-color-iii)] "
               tabIndex="0"
+              style={{
+                boxShadow:
+                  "rgba(0, 0, 0, 0.05) 0px 6px 24px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px",
+              }}
             >
               <img
                 src={tech.icon}
                 alt={tech.name}
                 className="w-10 h-10 object-contain transition-transform duration-300 group-hover:rotate-6 group-focus:rotate-6"
               />
-              <span className="absolute bottom-[-1.5rem] opacity-0 group-hover:opacity-100 group-focus:opacity-100 text-sm text-gray-700 dark:text-gray-300 transition-opacity">
+              <span className="absolute bottom-[-1.5rem] opacity-0 group-hover:opacity-100 group-focus:opacity-100 text-sm text-gray-700  transition-opacity">
                 {tech.name}
               </span>
             </div>

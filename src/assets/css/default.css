@@ -9,6 +9,9 @@
 .font-secondary {
     font-family: var(--font-secondary);
 }
+.font-tertiary{
+    font-family: var(--font-tertiary);
+}
 .bg-primary {
     background-color: var(--bg-primary);
 }
@@ -17,6 +20,15 @@
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 5;
     overflow: hidden;
+}
+.line-clamp-7{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 7;
+    overflow: hidden;
+}
+.section-space {
+    padding: var(--section-space) 0 var(--section-space) 0;
 }
 .font-size-xxs {
     font-size : 14px;
@@ -40,8 +52,11 @@
     font-size : 32px;
 }
 .font-size-3xl {
-    font-size : 64px;
+    font-size : 42px;
 }
-.font-size-4xl {
+.font-size-4xl{
+    font-size : 62px;
+}
+.font-size-5xl {
     font-size : 72px;
 }
