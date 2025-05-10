@@ -28,7 +28,6 @@ header {
     display: inline-block;
     position: relative;
     text-decoration: none;
-    color: white;
     transition: color 0.3s ease;
 }
 

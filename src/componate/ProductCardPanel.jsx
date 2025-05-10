@@ -70,7 +70,7 @@ const ProductCardPanel = () => {
     ))}
   </div>
   <div className="w-full mx-auto flex  max-w-40 pt-8">
-    <Button variant={"simple-blue"} name={"See More ..."} />
+    <Button normal variant={"simple-blue"} name={"See More ..."} />
   </div>
 </div>
 

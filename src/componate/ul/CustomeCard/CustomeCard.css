@@ -1,0 +1,28 @@
+.shine-on-hover {
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.4) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  transform: skewX(-20deg);
+  transition: left 0.75s ease;
+}
+
+.group:hover .shine-on-hover {
+  animation: shine-once 0.75s forwards;
+}
+
+@keyframes shine-once {
+  0% {
+    left: -75%;
+  }
+  100% {
+    left: 125%;
+  }
+}

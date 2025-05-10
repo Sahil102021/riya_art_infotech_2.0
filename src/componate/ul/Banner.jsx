@@ -13,7 +13,7 @@ const Banner = () => {
               <br className="sm:hidden" />
               50% Off
             </h2>
-           <Button variant={"simple-border-i"} link={"/"} name={"New Website"} />
+           < normal variant={"simple-border-i"} link={"/"} name={"New Website"} />
           </div>
         </div>
       </div>

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import axios from "axios";
-import CustomeCard from "../componate/ul/CustomeCard";
+import CustomeCard from "../componate/ul/CustomeCard/CustomeCard";
 
 const Product = () => {
   const [search, setSearch] = useState("");
@@ -64,7 +64,7 @@ const Product = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-5">
           {filteredProducts.map((product) => (
             <NavLink to={`/product/${product.id}`} key={product.id} className="block w-full h-full">
-              <CustomeCard img={product.image} title={product.title} description={product.description}  />
+              <CustomeCard img={product.image} title={product.title} description={product.description} price={product.price} />
             </NavLink>
           ))}
         </div>

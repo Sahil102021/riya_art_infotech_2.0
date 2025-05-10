@@ -27,7 +27,9 @@ const Home = () => {
         </div>
       </section>
       <section>
+        <div className="py-4">
         <InfiniteScrollingText />
+        </div>
       </section>
       <section>
         <div className="w-full section-space">
@@ -73,7 +75,7 @@ const Home = () => {
       </section>
 
       <section>
-        <div className="w-full section-space ">
+        <div className="w-full section-space max-1920">
           <div className="px-5 mx-auto">
           <motion.div
             className="text-center mb-3 md:mb-6 2xl:mb-12"

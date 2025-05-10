@@ -3,6 +3,10 @@
     margin: 0 auto;
     padding: 0 10px;
 }
+.max-1920 {
+    max-width: 1920px;
+    margin: auto;
+}
 .font-primary {
     font-family: var(--font-primary);
 }

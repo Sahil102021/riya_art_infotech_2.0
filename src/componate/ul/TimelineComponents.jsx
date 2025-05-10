@@ -30,9 +30,9 @@ const TimelineComponents = () => {
   return (
     <section className="w-full">
       <div className="w-full">
-        <div className="grid sm:gap-4 sm:mx-4 sm:grid-cols-12 gap-3">
+        <div className="grid gap-3 sm:gap-4 lg:gap-8 2xl:gap-12 sm:mx-4 sm:grid-cols-2 ">
           {/* Left Side */}
-          <div className="col-span-12 sm:col-span-6">
+          <div className="col-span-2 sm:col-span-1">
             <div className="text-center sm:text-left mb-10 before:block before:w-24 before:h-3 before:mb-5 before:rounded-md before:mx-auto sm:before:mx-0 before:bg-[var(--bg-color-xi)]">
               <h3 className="font-size-2xl font-semibold font-secondary tracking-wider ">Developmate Step</h3>
               <span className="font-size-xs font-bold tracking-wider uppercase text-gray-600">
@@ -49,7 +49,7 @@ const TimelineComponents = () => {
           </div>
 
           {/* Right Side Timeline */}
-          <div className="relative col-span-12 sm:px-4 sm:col-span-6 flex items-center">
+          <div className="relative col-span-2 sm:px-4 sm:col-span-1 flex items-center">
             <div className="col-span-12 space-y-6 sm:space-y-12 relative sm:px-4 sm:col-span-8 sm:before:absolute sm:before:top-2 sm:before:bottom-0 sm:before:w-0.5 sm:before:-left-3 before:bg-gray-300">
               {data.map((step, index) => (
                 <div
@@ -62,7 +62,7 @@ const TimelineComponents = () => {
                   <time className="font-size-xs tracking-wide uppercase text-gray-600">
                     {step.time}
                   </time>
-                  <p className="font-size-sm mt-3">{step.description}</p>
+                  <p className="font-size-sm mt-1 sm:mt-3">{step.description}</p>
                 </div>
               ))}
             </div>

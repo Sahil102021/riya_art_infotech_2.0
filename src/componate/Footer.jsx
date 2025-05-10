@@ -81,7 +81,7 @@ const Footer = () => {
               <img src={logo1} width="100%" alt="Company Logo" />
             </div>
 
-            <p className="max-w-md mt-3 leading-relaxed text-gray-200 sm:max-w-xs sm:mx-0 sm:text-left">
+            <p className="max-w-md mt-3 font-size-sm leading-relaxed text-gray-200 sm:max-w-xs sm:mx-0 sm:text-left">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt
               consequuntur amet culpa cum itaque neque.
             </p>
@@ -109,13 +109,13 @@ const Footer = () => {
             <div className="text-left">
               <p className="text-lg font-medium text-white">About Us</p>
 
-              <nav className="mt-3 sm:mt-8">
-                <ul className="space-y-2 sm:space-y-4 text-sm">
+              <nav className="mt-3 sm:mt-4 xl:mt-6 2xl:mt-8">
+                <ul className="space-y-1 sm:space-y-2 2xl:space-y-4">
                   {AboutUs.map((el, i) => {
                     return (
                       <li key={i}>
                         <a
-                          className="text-white font-size-sm transition hover:text-white/75 linkEffect linkEffect--insideOut"
+                          className="text-gray-300 font-size-sm transition linkEffect linkEffect--insideOut"
                           href={el.link}
                         >
                           {el.name}
@@ -130,13 +130,13 @@ const Footer = () => {
             <div className="text-left">
               <p className="text-lg font-medium text-white">Our Services</p>
 
-              <nav className="mt-3 sm:mt-8">
-                <ul className="space-y-2 sm:space-y-4 text-sm">
+              <nav className="mt-3 sm:mt-4 xl:mt-6 2xl:mt-8">
+                <ul className="space-y-1 sm:space-y-2 2xl:space-y-4">
                   {OurServices.map((el, i) => {
                     return (
                       <li key={i}>
                         <a
-                          className="text-white font-size-sm transition hover:text-white/75 linkEffect linkEffect--insideOut "
+                          className="text-gray-300 font-size-sm transition linkEffect linkEffect--insideOut "
                           href={el.link}
                         >
                           {el.name}
@@ -151,13 +151,13 @@ const Footer = () => {
             <div className="text-left">
               <p className="text-lg font-medium text-white">Helpful Links</p>
 
-              <nav className="mt-3 sm:mt-8">
-                <ul className="space-y-2 sm:space-y-4 text-sm">
+              <nav className="mt-3 sm:mt-4 xl:mt-6 2xl:mt-8">
+                <ul className="space-y-1 sm:space-y-2 2xl:space-y-4">
                   {HelpfulLinks.map((el, i) => {
                     return (
                       <li key={i}>
                         <a
-                          className="text-white font-size-sm transition hover:text-white/75 linkEffect linkEffect--insideOut"
+                          className="text-gray-300 font-size-sm transition  linkEffect linkEffect--insideOut"
                           href={el.link}
                         >
                           {el.name}
@@ -170,7 +170,7 @@ const Footer = () => {
                       className="flex group justify-start sm:justify-start gap-1.5 "
                       href="/"
                     >
-                      <span className="text-white font-size-sm transition group-hover:text-white/75 linkEffect linkEffect--insideOut">
+                      <span className="text-gray-300 font-size-sm transition  linkEffect linkEffect--insideOut">
                         Live Chat
                       </span>
                       <span className="relative flex w-2 h-2 -mr-2">
@@ -186,16 +186,16 @@ const Footer = () => {
             <div className="text-left">
               <p className="text-lg font-medium text-white">Contact Us</p>
 
-              <ul className="mt-3 sm:mt-8 space-y-2 sm:space-y-4 text-sm">
+              <ul className="mt-3 sm:mt-4 xl:mt-6 2xl:mt-8 space-y-1 sm:space-y-2 2xl:space-y-4 text-sm">
                 <li>
                   <a
                     className="flex items-center justify-start sm:justify-start gap-1.5 group"
                     href="/"
                   >
-                    <div className="w-5 h-5 text-white shrink-0 group-hover:text-[var(--bg-color-iii)]">
+                    <div className="w-5 h-5 text-gray-300 shrink-0 group-hover:text-[var(--bg-color-iii)]">
                       {svgIcon.mail}
                     </div>
-                    <span className="text-white font-size-sm transition group-hover:text-[var(--bg-color-iii)]">
+                    <span className="text-gray-300 font-size-sm transition group-hover:text-[var(--bg-color-iii)]">
                       john@doe.com
                     </span>
                   </a>
@@ -206,20 +206,20 @@ const Footer = () => {
                     className="flex items-center justify-start sm:justify-start gap-1.5 group"
                     href="/"
                   >
-                    <div className="w-5 h-5 text-white shrink-0 group-hover:text-[var(--bg-color-iii)]">
+                    <div className="w-5 h-5 text-gray-300 shrink-0 group-hover:text-[var(--bg-color-iii)]">
                       {svgIcon.contact}
                     </div>
-                    <span className="text-white font-size-sm transition group-hover:text-[var(--bg-color-iii)]">
+                    <span className="text-gray-300 font-size-sm transition group-hover:text-[var(--bg-color-iii)]">
                       0123456789
                     </span>
                   </a>
                 </li>
 
                 <li className="flex items-start justify-start gap-1.5 sm:justify-start group">
-                  <div className="w-5 h-5 text-white shrink-0 group-hover:text-[var(--bg-color-iii)]">
+                  <div className="w-5 h-5 text-gray-300 shrink-0 group-hover:text-[var(--bg-color-iii)]">
                     {svgIcon.location}
                   </div>
-                  <address className="-mt-0.5 font-size-sm not-italic text-white group-hover:text-[var(--bg-color-iii)]">
+                  <address className="-mt-0.5 font-size-sm not-italic text-gray-300 group-hover:text-[var(--bg-color-iii)]">
                     213 Lane, London, United Kingdom
                   </address>
                 </li>

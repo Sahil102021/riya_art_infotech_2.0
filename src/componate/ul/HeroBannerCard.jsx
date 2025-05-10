@@ -30,7 +30,7 @@ const HeroBannerCard = ({img ,title , description ,develop}) => {
       {/* Price and Button */}
       <div className="flex items-center gap-4 px-2 xs:px-4 sm:px-6 pb-2 xs:pb-4 sm:pb-6">
         <p className="text-xl font-primary text-black">$78</p>
-        <Button variant="simple-blue" name="More..." link="/" />
+        <Button normal variant="simple-blue" name="More..." link="/" />
       </div>
     </div>
   </div>

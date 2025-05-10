@@ -34,8 +34,8 @@ const Hero = () => {
               <div className="rotating-box ">
                 <img src={b_star} width="100%" alt="" />
               </div>
-              <Button variant={"simple-blue"} name={"Suspendisse"} link={"/"} />
-              <Button variant={"simple-border"} name={"Malesuada"} link={"/"} />
+              <Button normal variant={"simple-blue"} name={"Suspendisse"} link={"/"} />
+              <Button normal variant={"simple-border"} name={"Malesuada"} link={"/"} />
             </div>
           </div>
         </div>
