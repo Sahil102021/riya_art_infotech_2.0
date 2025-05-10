@@ -10,7 +10,8 @@ import WavyAnimation from "../componate/ul/WavyAnimation/WavyAnimation";
 import ProductCardPanel from "../componate/ProductCardPanel";
 import AnimationCard from "../componate/ul/AnimationCard";
 import ArrowZoomCard from "../componate/ul/ArrowZoomCard";
-
+import "../App.css";
+import InfiniteScrollingText from "../componate/ul/InfiniteScrollingText/InfiniteScrollingText";
 const Home = () => {
   return (
     <div>
@@ -21,7 +22,9 @@ const Home = () => {
           </div>
         </div>
       </section>
-
+      <section>
+        <InfiniteScrollingText />
+      </section>
       <section>
         <div className="w-full section-space">
           <div className="main-container">
@@ -93,7 +96,6 @@ const Home = () => {
           </div>
         </div>
       </section>
-      
     </div>
   );
 };

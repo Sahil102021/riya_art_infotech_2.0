@@ -1,0 +1,46 @@
+.scrolling-text-container {
+  background-color: #eff5ff;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.scrolling-text-inner {
+  display: flex;
+  white-space: nowrap;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 8px 0;
+}
+
+.scrolling-text {
+  display: flex;
+  animation: var(--direction) var(--marquee-speed) linear infinite;
+}
+
+.scrolling-text-item {
+  padding: 0 30px;
+}
+
+/* Pause animation on hover */
+.scrolling-text-container:hover .scrolling-text {
+  animation-play-state: paused;
+}
+
+/* Keyframes */
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes scroll-right {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}

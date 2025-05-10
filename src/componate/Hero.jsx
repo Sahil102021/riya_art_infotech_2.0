@@ -30,7 +30,7 @@ const Hero = () => {
             </p>
 
             <div className="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start">
-              <div class="rotating-box ">
+              <div className="rotating-box ">
                 <img src={b_star} width="100%" alt="" />
               </div>
               <Button variant={"simple-blue"} name={"Suspendisse"} link={"/"} />
