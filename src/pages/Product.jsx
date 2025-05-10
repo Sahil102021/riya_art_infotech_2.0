@@ -64,7 +64,7 @@ const Product = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-5">
           {filteredProducts.map((product) => (
             <NavLink to={`/product/${product.id}`} key={product.id} className="block w-full h-full">
-              <CustomeCard image={product.image} title={product.title} description={product.description}  />
+              <CustomeCard img={product.image} title={product.title} description={product.description}  />
             </NavLink>
           ))}
         </div>

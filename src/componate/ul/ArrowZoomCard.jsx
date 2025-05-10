@@ -40,7 +40,7 @@ const data = [
 
 const ArrowZoomCard = () => {
   return (
-    <div className="w-full grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+    <div className="w-full grid gap-4 sm:gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
       {data.map((item, index) => {
         const cardRef = useRef(null);
 

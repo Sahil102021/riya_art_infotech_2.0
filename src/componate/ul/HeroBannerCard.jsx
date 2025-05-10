@@ -1,5 +1,5 @@
 import React from 'react';
-import Button from './button';
+import Button from './Button/Button';
 
 const HeroBannerCard = ({img ,title , description ,develop}) => {
   return (
@@ -19,7 +19,7 @@ const HeroBannerCard = ({img ,title , description ,develop}) => {
     <div className="w-full 2xl:w-1/2 bg-white flex flex-col justify-between rounded-b-lg 2xl:rounded-b-none 2xl:rounded-r-lg">
       
       {/* Text Content */}
-      <div className="p-4 sm:p-6 space-y-2">
+      <div className="p-2 xs:p-4 sm:p-6 space-y-2">
         <h1 className="font-size-2xl text-black font-semibold font-primary">{title}</h1>
         <h2 className="font-size-xs uppercase tracking-[0.1em] text-gray-500 font-raleway">{develop}</h2>
         <p className="font-size-sm text-gray-700 font-primary leading-relaxed line-clamp-6 tracking-wide">
@@ -28,7 +28,7 @@ const HeroBannerCard = ({img ,title , description ,develop}) => {
       </div>
 
       {/* Price and Button */}
-      <div className="flex items-center gap-4 px-4 sm:px-6 pb-4 sm:pb-6">
+      <div className="flex items-center gap-4 px-2 xs:px-4 sm:px-6 pb-2 xs:pb-4 sm:pb-6">
         <p className="text-xl font-primary text-black">$78</p>
         <Button variant="simple-blue" name="More..." link="/" />
       </div>

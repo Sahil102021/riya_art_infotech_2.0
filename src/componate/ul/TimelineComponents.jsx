@@ -30,7 +30,7 @@ const TimelineComponents = () => {
   return (
     <section className="w-full">
       <div className="w-full">
-        <div className="grid sm:gap-4 sm:mx-4 sm:grid-cols-12">
+        <div className="grid sm:gap-4 sm:mx-4 sm:grid-cols-12 gap-3">
           {/* Left Side */}
           <div className="col-span-12 sm:col-span-6">
             <div className="text-center sm:text-left mb-10 before:block before:w-24 before:h-3 before:mb-5 before:rounded-md before:mx-auto sm:before:mx-0 before:bg-[var(--bg-color-xi)]">

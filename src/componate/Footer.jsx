@@ -105,7 +105,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div className="grid grid-cols-2 gap-4 sm:gap-8 sm:grid-cols-2 lg:col-span-2 md:grid-cols-4">
+          <div className="grid grid-cols-1 xs:grid-cols-2 gap-4 sm:gap-8 sm:grid-cols-2 lg:col-span-2 md:grid-cols-4">
             <div className="text-left">
               <p className="text-lg font-medium text-white">About Us</p>
 
@@ -115,7 +115,7 @@ const Footer = () => {
                     return (
                       <li key={i}>
                         <a
-                          className="text-white transition hover:text-white/75 linkEffect linkEffect--insideOut"
+                          className="text-white font-size-sm transition hover:text-white/75 linkEffect linkEffect--insideOut"
                           href={el.link}
                         >
                           {el.name}
@@ -136,7 +136,7 @@ const Footer = () => {
                     return (
                       <li key={i}>
                         <a
-                          className="text-white transition hover:text-white/75 linkEffect linkEffect--insideOut "
+                          className="text-white font-size-sm transition hover:text-white/75 linkEffect linkEffect--insideOut "
                           href={el.link}
                         >
                           {el.name}
@@ -157,7 +157,7 @@ const Footer = () => {
                     return (
                       <li key={i}>
                         <a
-                          className="text-white transition hover:text-white/75 linkEffect linkEffect--insideOut"
+                          className="text-white font-size-sm transition hover:text-white/75 linkEffect linkEffect--insideOut"
                           href={el.link}
                         >
                           {el.name}
@@ -170,7 +170,7 @@ const Footer = () => {
                       className="flex group justify-start sm:justify-start gap-1.5 "
                       href="/"
                     >
-                      <span className="text-white transition group-hover:text-white/75 linkEffect linkEffect--insideOut">
+                      <span className="text-white font-size-sm transition group-hover:text-white/75 linkEffect linkEffect--insideOut">
                         Live Chat
                       </span>
                       <span className="relative flex w-2 h-2 -mr-2">
@@ -192,10 +192,10 @@ const Footer = () => {
                     className="flex items-center justify-start sm:justify-start gap-1.5 group"
                     href="/"
                   >
-                    <div className="w-5 h-5 text-white shrink-0">
+                    <div className="w-5 h-5 text-white shrink-0 group-hover:text-[var(--bg-color-iii)]">
                       {svgIcon.mail}
                     </div>
-                    <span className="text-white transition group-hover:text-white/75">
+                    <span className="text-white font-size-sm transition group-hover:text-[var(--bg-color-iii)]">
                       john@doe.com
                     </span>
                   </a>
@@ -206,20 +206,20 @@ const Footer = () => {
                     className="flex items-center justify-start sm:justify-start gap-1.5 group"
                     href="/"
                   >
-                    <div className="w-5 h-5 text-white shrink-0">
+                    <div className="w-5 h-5 text-white shrink-0 group-hover:text-[var(--bg-color-iii)]">
                       {svgIcon.contact}
                     </div>
-                    <span className="text-white transition group-hover:text-white/75">
+                    <span className="text-white font-size-sm transition group-hover:text-[var(--bg-color-iii)]">
                       0123456789
                     </span>
                   </a>
                 </li>
 
-                <li className="flex items-start justify-start gap-1.5 sm:justify-start">
-                  <div className="w-5 h-5 text-white shrink-0">
+                <li className="flex items-start justify-start gap-1.5 sm:justify-start group">
+                  <div className="w-5 h-5 text-white shrink-0 group-hover:text-[var(--bg-color-iii)]">
                     {svgIcon.location}
                   </div>
-                  <address className="-mt-0.5 not-italic text-white">
+                  <address className="-mt-0.5 font-size-sm not-italic text-white group-hover:text-[var(--bg-color-iii)]">
                     213 Lane, London, United Kingdom
                   </address>
                 </li>
@@ -233,21 +233,21 @@ const Footer = () => {
             <p className="text-sm text-gray-400">
               <span className="block sm:inline">All rights reserved.</span>
               <a
-                className="inline-block text-gray-400 underline transition hover:text-[var(--bg-color-iii)]"
+                className="inline-block font-size-sm text-gray-400 underline transition hover:text-[var(--bg-color-iii)]"
                 href="/"
               >
                 Terms & Conditions
               </a>
               <span>&middot;</span>
               <a
-                className="inline-block text-gray-400 underline transition hover:text-[var(--bg-color-iii)]"
+                className="inline-block font-size-sm text-gray-400 underline transition hover:text-[var(--bg-color-iii)]"
                 href="/"
               >
                 Privacy Policy
               </a>
             </p>
 
-            <p className=" text-sm text-gray-400 sm:order-first sm:mt-0">
+            <p className=" text-gray-400 font-size-sm sm:order-first sm:mt-0">
               &copy; 2022 Company Name
             </p>
           </div>

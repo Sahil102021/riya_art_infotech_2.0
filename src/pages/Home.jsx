@@ -12,6 +12,10 @@ import AnimationCard from "../componate/ul/AnimationCard";
 import ArrowZoomCard from "../componate/ul/ArrowZoomCard";
 import "../App.css";
 import InfiniteScrollingText from "../componate/ul/InfiniteScrollingText/InfiniteScrollingText";
+import Card_2 from "../componate/ul/Card_2/Card_2";
+import { cardData, testimonials } from "../conts/data";
+import { motion } from "framer-motion";
+
 const Home = () => {
   return (
     <div>
@@ -29,14 +33,9 @@ const Home = () => {
         <div className="w-full section-space">
           <div className="main-container">
             <Services />
-          </div>
-        </div>
-      </section>
-
-      <section>
-        <div className="w-full section-space">
-          <div className="main-container">
-            <ArrowZoomCard />
+            <div className="pt-10">
+              <ArrowZoomCard />
+            </div>
           </div>
         </div>
       </section>
@@ -74,6 +73,28 @@ const Home = () => {
       </section>
 
       <section>
+        <div className="w-full section-space ">
+          <div className="px-5 mx-auto">
+          <motion.div
+            className="text-center mb-3 md:mb-6 2xl:mb-12"
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, ease: "easeOut" }}
+          >
+            <h2 className="font-size-3xl font-tertiary text-[var(--bg-primary)]">
+              Discover Our Exclusive Collection
+            </h2>
+            <p className="font-size-xs text-gray-500">
+              Handpicked items crafted with care and creativity — perfect for
+              modern living
+            </p>
+          </motion.div>
+          <SwiperSection variant="cardData" data={cardData} />
+          </div>
+        </div>
+      </section>
+
+      <section>
         <div className="w-full section-space">
           <div className="main-container">
             <Stats_2 />
@@ -84,7 +105,21 @@ const Home = () => {
       <section>
         <div className="w-full section-space">
           <div className="main-container">
-            <SwiperSection />
+            <motion.div
+              className="text-center mb-3 md:mb-6 2xl:mb-12"
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, ease: "easeOut" }}
+            >
+              <h2 className="font-size-3xl font-tertiary text-[var(--bg-primary)]">
+                Discover Our Exclusive Collection
+              </h2>
+              <p className="font-size-xs text-gray-500">
+                Handpicked items crafted with care and creativity — perfect for
+                modern living
+              </p>
+            </motion.div>
+            <SwiperSection variant="testimonials" data={testimonials} />
           </div>
         </div>
       </section>

@@ -54,7 +54,7 @@ const Stats_2 = () => {
         viewport={{ once: true }}
         transition={{ duration: 0.6, ease: "easeOut" }}
       >
-        <div className="text-center mb-2 md:mb-6 2xl:mb-12">
+        <div className="text-center mb-3 md:mb-6 2xl:mb-12">
           <h2 className="font-size-3xl font-tertiary">
             Programing language
           </h2>
@@ -63,7 +63,7 @@ const Stats_2 = () => {
             modern living
           </p>
         </div>
-        <div className="flex flex-wrap justify-center gap-10 lg:justify-between">
+        <div className="flex flex-wrap justify-center gap-3 xs:gap-10 lg:justify-between">
           {techLogos.map((tech, index) => (
             <div
               key={index}

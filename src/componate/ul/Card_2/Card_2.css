@@ -1,0 +1,48 @@
+.card_2 {
+  position: relative;
+  width: 100%;
+  /* other styles */
+}
+
+.card_2 .before,
+.card_2 .after {
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background: rgba(0, 0, 0, 0.5);
+  transform-origin: left;
+  transform: scaleX(0);
+  transition: transform 0.5s cubic-bezier(0.66, 0.08, 0.19, 0.97);
+  z-index: 10;
+}
+
+.card_2 .after {
+  top: 50%;
+  transition-delay: 150ms;
+}
+
+.card_2:hover .before,
+.card_2:focus .before,
+.card_2:hover .after,
+.card_2:focus .after {
+  transform: scaleX(1);
+}
+
+.card_2:hover h2,
+.card_2:focus h2,
+.card_2:hover p,
+.card_2:focus p {
+  opacity: 1;
+  transform: translateY(0);
+  color: inherit;
+  transition-delay: 0.1s;
+}
+
+.card_2 h2,
+.card_2 p {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.4s, transform 0.4s;
+}

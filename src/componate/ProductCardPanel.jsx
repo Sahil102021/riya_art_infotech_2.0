@@ -1,6 +1,7 @@
 import React from "react";
 import HeroBannerCard from "./ul/HeroBannerCard";
 import { motion } from "framer-motion";
+import Button from "./ul/Button/Button";
 
 const data = [
   {
@@ -35,7 +36,7 @@ const ProductCardPanel = () => {
     <div className="w-full">
   {/* Title Section with Fade-In */}
   <motion.div
-    className="text-center mb-2 md:mb-6 2xl:mb-12"
+    className="text-center mb-3 md:mb-6 2xl:mb-12"
     initial={{ opacity: 0, y: 30 }}
     animate={{ opacity: 1, y: 0 }}
     transition={{ duration: 0.6, ease: "easeOut" }}
@@ -49,7 +50,7 @@ const ProductCardPanel = () => {
   </motion.div>
 
   {/* Grid with Staggered Cards */}
-  <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
     {data.map((el, i) => (
       <motion.div
         key={i}
@@ -67,6 +68,9 @@ const ProductCardPanel = () => {
         />
       </motion.div>
     ))}
+  </div>
+  <div className="w-full mx-auto flex  max-w-40 pt-8">
+    <Button variant={"simple-blue"} name={"See More ..."} />
   </div>
 </div>
 

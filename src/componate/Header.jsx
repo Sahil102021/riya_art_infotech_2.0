@@ -3,6 +3,7 @@ import { navbar } from "../conts/data";
 import { Link } from "react-router-dom";
 import { ChevronDown, Menu, X } from "lucide-react";
 import { logo1 } from "../assets/images";
+import Button from "./ul/Button/Button";
 
 const Header = () => {
   const [openDropdownId, setOpenDropdownId] = useState(null);
@@ -23,31 +24,25 @@ const Header = () => {
   };
 
   return (
-    <header className="w-full bg-[var(--bg-primary-transpant)] fixed w-full z-30 top-0 border-b border-gray-200 backdrop-blur-md shadow-sm">
+    <header className="w-full bg-[var(--bg-primary-transpant)] fixed w-full z-30 top-0 border-b border-gray-200 backdrop-blur-xl shadow-sm">
       <div className="main-container w-full h-full">
         <div className="w-full h-full mx-auto  flex items-center justify-between py-3">
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-2">
+          <Link to="/" className="flex items-center space-x-3">
             <img
               src={logo1}
-              className="h-12"
+              className="h-12 rounded-full"
               alt="Logo"
             />
-            <span className="text-2xl font-semibold  text-white">
+            <span className="text-xl font-semibold font-primary text-white">
               Riya Art Infotech
             </span>
           </Link>
 
-          {/* Mobile Toggle */}
-          <button
-            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="md:hidden text-gray-700 dark:text-white"
-          >
-            {isMobileMenuOpen ? <X size={28} /> : <Menu size={28} />}
-          </button>
+          
 
           {/* Desktop Nav */}
-          <nav className="hidden md:flex space-x-6">
+          <nav className="hidden md:flex space-x-6 justify-center items-center">
             {navbar.map((item) => (
               <div key={item.id} className="relative dropdown-wrapper">
                 {!item.list ? (
@@ -89,7 +84,19 @@ const Header = () => {
                 )}
               </div>
             ))}
+            {/* late's talk */}
+            <div className="">
+            <Button variant={"simple-shine-blue"} name={"late's talk"} />
+            </div>
           </nav>
+
+          {/* Mobile Toggle */}
+          <button
+            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            className="md:hidden text-gray-700 dark:text-white"
+          >
+            {isMobileMenuOpen ? <X size={28} /> : <Menu size={28} />}
+          </button>
         </div>
 
         {/* Backdrop Overlay */}
