@@ -67,7 +67,7 @@ const Home = () => {
       </section>
 
       <section>
-        <div className="w-full section-space">
+        <div className="w-full section-space bg-[var(--bg-color-i)]">
           <div className="main-container">
             <TimelineComponents />
           </div>
@@ -97,7 +97,7 @@ const Home = () => {
       </section>
 
       <section>
-        <div className="w-full section-space">
+        <div className="w-full section-space bg-[var(--bg-color-xxi)]">
           <div className="main-container">
             <Stats_2 />
           </div>
@@ -127,7 +127,7 @@ const Home = () => {
       </section>
 
       <section>
-        <div className="w-full section-space">
+        <div className="w-full section-space bg-[var(--bg-color-i)] ">
           <div className="main-container">
             <Price />
           </div>

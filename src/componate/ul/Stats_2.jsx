@@ -67,7 +67,7 @@ const Stats_2 = () => {
           {techLogos.map((tech, index) => (
             <div
               key={index}
-              className="relative group w-20 h-20 flex items-center justify-center rounded-xl shadow-lg hover:bg-[var(--bg-color-i)]  hover:scale-110 focus:scale-110 transition-all duration-300 cursor-pointer border border-transparent hover:border-[var(--bg-color-iii)] "
+              className="relative group mb-6 w-20 h-20 flex items-center justify-center rounded-xl shadow-lg hover:bg-[var(--bg-color-i)]  hover:scale-110 focus:scale-110 transition-all duration-300 cursor-pointer border border-transparent hover:border-[var(--bg-color-iii)] "
               tabIndex="0"
               style={{
                 boxShadow:

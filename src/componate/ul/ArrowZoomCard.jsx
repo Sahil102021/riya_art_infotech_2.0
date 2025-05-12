@@ -77,15 +77,15 @@ const ArrowZoomCard = () => {
             <div className="grid grid-cols-3 gap-4 text-center">
               <div>
                 <div className="font-size-md font-bold font-primary">{item.part1}</div>
-                <div className="font-size-xxs font-primary">{item.subTitle1}</div>
+                <div className="font-size-xs text-white/70 font-primary">{item.subTitle1}</div>
               </div>
               <div>
                 <div className="font-size-md font-bold font-primary">{item.part2}</div>
-                <div className="font-size-xxs text-white/70 font-primary">{item.subTitle2}</div>
+                <div className="font-size-xs text-white/70 font-primary">{item.subTitle2}</div>
               </div>
               <div>
                 <div className="font-size-md font-bold font-primary">{item.part3}</div>
-                <div className="font-size-xxs text-white/70 font-primary">{item.subTitle3}</div>
+                <div className="font-size-xs text-white/70 font-primary">{item.subTitle3}</div>
               </div>
             </div>
           </div>

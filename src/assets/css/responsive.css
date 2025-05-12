@@ -95,7 +95,7 @@
 
 /* ≤ 767px (phones) */
 @media (max-width: 767px) {
-  .font-size-xxs { font-size: 10px; }
+
   .font-size-xs  { font-size: 14px; }
   .font-size-sm  { font-size: 14px; }
   .font-size-md  { font-size: 16px; }

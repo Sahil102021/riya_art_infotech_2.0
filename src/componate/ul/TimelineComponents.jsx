@@ -50,7 +50,7 @@ const TimelineComponents = () => {
 
           {/* Right Side Timeline */}
           <div className="relative col-span-2 sm:px-4 sm:col-span-1 flex items-center">
-            <div className="col-span-12 space-y-6 sm:space-y-12 relative sm:px-4 sm:col-span-8 sm:before:absolute sm:before:top-2 sm:before:bottom-0 sm:before:w-0.5 sm:before:-left-3 before:bg-gray-300">
+            <div className="col-span-12 space-y-6 sm:space-y-12 relative sm:px-4 sm:col-span-8 sm:before:absolute sm:before:top-2 sm:before:bottom-0 sm:before:w-0.25 sm:before:-left-3 before:bg-black">
               {data.map((step, index) => (
                 <div
                   key={index}

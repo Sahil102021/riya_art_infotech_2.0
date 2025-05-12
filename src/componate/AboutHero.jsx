@@ -1,16 +1,16 @@
 import React from "react";
-import { b_star, Hero12 } from "../assets/images";
+import { b_star, Hero12 , AboutHero1 } from "../assets/images";
 import Button from "./ul/Button/Button";
 
 
-const Hero = () => {
+const AboutHero = () => {
   return (
     <div>
       <div className="w-full ">
         <div className="w-full flex flex-col justify-center lg:flex-row lg:justify-between">
           <div className="flex items-center justify-center p-0 sm:p-6 sm:mt-8 lg:mt-0 h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-[700px]">
             <img
-              src={Hero12}
+              src={AboutHero1}
               alt=""
               className="object-contain h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128"
             />
@@ -44,4 +44,4 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+export default AboutHero;

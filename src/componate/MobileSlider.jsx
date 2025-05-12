@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { navbar } from "../conts/data";
 import { Link } from "react-router-dom";
 import { ChevronDown, X } from "lucide-react";
+import Button from "./ul/Button/Button";
 
 const MobileSlider = ({ isOpen, onClose }) => {
   const [openDropdownId, setOpenDropdownId] = useState(null);
@@ -32,14 +33,14 @@ const MobileSlider = ({ isOpen, onClose }) => {
 
       {/* Sidebar */}
       <div
-        className={`fixed top-0 right-0 h-full w-72 bg-white z-50 shadow-xl border-l border-gray-200 transform transition-transform duration-300 ${
+        className={`fixed top-0 right-0 h-full w-72 bg-[var(--bg-color-xii)] z-50 shadow-xl border-l border-gray-400 transform transition-transform duration-300 ${
           isOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
-        <div className="p-4 space-y-4 h-full flex flex-col overflow-y-auto">
+        <div className="p-4 space-y-2 sm:space-y-4 h-full flex flex-col overflow-y-auto">
           {/* Close Button */}
           <div className="flex justify-end">
-            <button onClick={onClose} className="text-gray-800">
+            <button onClick={onClose} className="text-white">
               <X size={24} />
             </button>
           </div>
@@ -51,7 +52,7 @@ const MobileSlider = ({ isOpen, onClose }) => {
                 <Link
                   to={item.link}
                   onClick={onClose}
-                  className="block py-2 text-gray-900 hover:text-blue-700 font-primary"
+                  className="block py-2 text-white hover:text-blue-700 font-primary font-size-sm"
                 >
                   {item.name}
                 </Link>
@@ -59,7 +60,7 @@ const MobileSlider = ({ isOpen, onClose }) => {
                 <>
                   <button
                     onClick={() => toggleDropdown(item.id)}
-                    className="flex items-center justify-between w-full text-gray-900 py-2 font-primary"
+                    className="flex items-center justify-between w-full text-white py-2 font-primary font-size-sm"
                   >
                     {item.name}
                     <ChevronDown
@@ -75,7 +76,7 @@ const MobileSlider = ({ isOpen, onClose }) => {
                           <Link
                             to={subItem.link}
                             onClick={onClose}
-                            className="block py-1 text-sm text-gray-700 hover:text-blue-600 font-primary"
+                            className="block py-1 text-sm text-white hover:text-blue-600 font-primary font-size-sm"
                           >
                             {subItem.name}
                           </Link>
@@ -87,6 +88,9 @@ const MobileSlider = ({ isOpen, onClose }) => {
               )}
             </div>
           ))}
+          <div className="w-full flex ">
+          <Button normal variant={"top-slide"} name={"Let's Talk"} />
+          </div>
         </div>
       </div>
     </>

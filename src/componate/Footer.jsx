@@ -1,7 +1,7 @@
 import React from "react";
 import { logo1 } from "../assets/images";
 import { svgIcon } from "../conts/svgIcon";
-
+import { NavLink } from "react-router-dom";
 
 let AboutUs = [
   {
@@ -74,12 +74,17 @@ let FooterIcon = [
 const Footer = () => {
   return (
     <footer className="w-full pt-6 sm:pt-16 pb-6 lg:pt-12 bg-[var(--bg-color-xii)]">
-      <div className="main-container "> 
+      <div className="main-container ">
         <div className="w-full flex flex-col lg:flex-row gap-8">
           <div className="">
-            <div className="w-12 h-12 flex justify-center text-teal-300 sm:justify-left">
-              <img src={logo1} width="100%" alt="Company Logo" />
-            </div>
+            <NavLink to="/" className="flex items-center space-x-3" >
+              <div className="min-w-12 min-h-12 w-12 h-12 rounded-full overflow-hidden">
+                <img src={logo1} width="100%" alt="Company Logo" />
+              </div>
+              <span className="font-size-xl font-semibold font-primary text-white">
+                Riya Art Infotech
+              </span>
+            </NavLink>
 
             <p className="max-w-md mt-3 font-size-sm leading-relaxed text-gray-200 sm:max-w-xs sm:mx-0 sm:text-left">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt
@@ -105,12 +110,12 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div className="grid grid-cols-1 xs:grid-cols-2 gap-4 sm:gap-8 sm:grid-cols-2 lg:col-span-2 md:grid-cols-4">
+          <div className="grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-2 lg:col-span-2 md:grid-cols-4 gap-4 md:gap-0">
             <div className="text-left">
               <p className="text-lg font-medium text-white">About Us</p>
 
               <nav className="mt-3 sm:mt-4 xl:mt-6 2xl:mt-8">
-                <ul className="space-y-1 sm:space-y-2 2xl:space-y-4">
+                <ul className="space-y-1 sm:space-y-2 xl:space-y-3 2xl:space-x-4">
                   {AboutUs.map((el, i) => {
                     return (
                       <li key={i}>
@@ -131,7 +136,7 @@ const Footer = () => {
               <p className="text-lg font-medium text-white">Our Services</p>
 
               <nav className="mt-3 sm:mt-4 xl:mt-6 2xl:mt-8">
-                <ul className="space-y-1 sm:space-y-2 2xl:space-y-4">
+                <ul className="space-y-1 sm:space-y-2 xl:space-y-3 2xl:space-x-4">
                   {OurServices.map((el, i) => {
                     return (
                       <li key={i}>
@@ -152,7 +157,7 @@ const Footer = () => {
               <p className="text-lg font-medium text-white">Helpful Links</p>
 
               <nav className="mt-3 sm:mt-4 xl:mt-6 2xl:mt-8">
-                <ul className="space-y-1 sm:space-y-2 2xl:space-y-4">
+                <ul className="space-y-1 sm:space-y-2 xl:space-y-3 2xl:space-x-4">
                   {HelpfulLinks.map((el, i) => {
                     return (
                       <li key={i}>
@@ -186,7 +191,7 @@ const Footer = () => {
             <div className="text-left">
               <p className="text-lg font-medium text-white">Contact Us</p>
 
-              <ul className="mt-3 sm:mt-4 xl:mt-6 2xl:mt-8 space-y-1 sm:space-y-2 2xl:space-y-4 text-sm">
+              <ul className="mt-3 sm:mt-4 xl:mt-6 2xl:mt-8 space-y-1 sm:space-y-2 xl:space-y-3 2xl:space-x-4 text-sm">
                 <li>
                   <a
                     className="flex items-center justify-start sm:justify-start gap-1.5 group"
@@ -231,23 +236,23 @@ const Footer = () => {
         <div className="pt-4 sm:pt-6 mt-4 sm:mt-12 border-t border-gray-300">
           <div className=" flex justify-between text-left">
             <p className="text-sm text-gray-400">
-              <span className="block sm:inline">All rights reserved.</span>
+              <span className="block sm:inline font-size-xxs ">All rights reserved.</span>
               <a
-                className="inline-block font-size-sm text-gray-400 underline transition hover:text-[var(--bg-color-iii)]"
+                className="inline-block font-size-xxs text-gray-400 underline transition hover:text-[var(--bg-color-iii)]"
                 href="/"
               >
                 Terms & Conditions
               </a>
               <span>&middot;</span>
               <a
-                className="inline-block font-size-sm text-gray-400 underline transition hover:text-[var(--bg-color-iii)]"
+                className="inline-block font-size-xxs text-gray-400 underline transition hover:text-[var(--bg-color-iii)]"
                 href="/"
               >
                 Privacy Policy
               </a>
             </p>
 
-            <p className=" text-gray-400 font-size-sm sm:order-first sm:mt-0">
+            <p className=" text-gray-400 font-size-xxs sm:order-first sm:mt-0">
               &copy; 2022 Company Name
             </p>
           </div>

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { navbar } from "../conts/data";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { ChevronDown, Menu, X } from "lucide-react";
 import { logo1 } from "../assets/images";
 import Button from "./ul/Button/Button";
@@ -30,12 +30,12 @@ const Header = () => {
       <div className="main-container w-full h-full">
         <div className="w-full h-full mx-auto flex items-center justify-between ">
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-3">
+          <NavLink to="/" className="flex items-center space-x-3">
             <img src={logo1} className="h-12 rounded-full" alt="Logo" />
-            <span className="text-xl font-semibold font-primary text-white">
+            <span className="font-size-2xl font-semibold font-primary text-white">
               Riya Art Infotech
             </span>
-          </Link>
+          </NavLink>
 
           {/* Desktop Nav */}
           <nav className="hidden md:flex space-x-6 items-center">
@@ -44,7 +44,7 @@ const Header = () => {
                 {!item.list ? (
                   <Link
                     to={item.link}
-                    className="text-white text-sm relative after:bg-white after:absolute after:h-1 after:w-0 after:bottom-[-5px] after:left-0 hover:after:w-full focus:after:w-full after:transition-all after:duration-300"
+                    className="text-white font-primary font-size-xxs uppercase relative after:bg-white after:absolute after:h-1 after:w-0 after:bottom-[-8px] after:left-0 hover:after:w-full focus:after:w-full after:transition-all after:duration-400"
                   >
                     {item.name}
                   </Link>
@@ -53,7 +53,7 @@ const Header = () => {
                     <button
                       onClick={() => toggleDropdown(item.id)}
                       aria-expanded={openDropdownId === item.id}
-                      className="flex items-center gap-1 text-white text-sm relative after:bg-white after:absolute after:h-1 after:w-0 after:bottom-[-5px] after:left-0 hover:after:w-full focus:after:w-full after:transition-all after:duration-300"
+                      className="flex items-center gap-1 font-primary font-size-xxs uppercase text-white relative after:bg-white after:absolute after:h-1 after:w-0 after:bottom-[-5px] after:left-0 hover:after:w-full focus:after:w-full after:transition-all after:duration-300"
                     >
                       {item.name}
                       <ChevronDown
@@ -63,13 +63,13 @@ const Header = () => {
                       />
                     </button>
                     {openDropdownId === item.id && (
-                      <ul className="absolute top-full mt-2 left-0 bg-white border rounded shadow-lg z-50 min-w-[180px]">
+                      <ul className="absolute top-full mt-2 right-0 bg-white border border-gray-500 rounded shadow-xl overflow-hidden z-50 min-w-[250px]">
                         {item.list.map((subItem) => (
                           <li key={subItem.id}>
                             <Link
                               to={subItem.link}
                               onClick={() => setOpenDropdownId(null)}
-                              className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 transition font-primary"
+                              className="block px-4 py-2 font-primary font-size-xs text-gray-700 hover:bg-[var(--bg-color-i)] transition font-primary"
                             >
                               {subItem.name}
                             </Link>
@@ -84,7 +84,7 @@ const Header = () => {
 
             {/* Let's Talk Button */}
             <div>
-              <Button variant="simple-shine-blue">Let's Talk</Button>
+              <Button normal variant="simple-shine-blue" name={"Get Touch"} link={'/contact'}></Button>
             </div>
           </nav>
 
