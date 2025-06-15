@@ -157,7 +157,7 @@ const ProductPage = () => {
 
             {/* Buttons */}
             <div className="flex space-x-4 mb-6">
-              <Button normal variant={"simple-blue"} name={"This Theme Customize Contact"} link={'/contact'} />
+              <Button normal variant={"simple-blue"} name={"This Theme Customize Contact"}  handleClick={() => handlePayment()} /> {/*link={'/contact'} */}
               <Button normal variant={"simple-border"} name={"More Watch list"} link={'/product'} />
             </div>
 

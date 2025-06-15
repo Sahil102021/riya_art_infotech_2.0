@@ -167,45 +167,45 @@ export const testimonials = [
 
 export const cardData = [
   {
-    title: "Frontend Development",
-    image: "https://images.unsplash.com/photo-1581276879432-15a9b7df84f5?auto=format&fit=crop&w=800&q=80",
-    description: "Build beautiful, interactive UIs using React, Vue, or Angular with modern HTML, CSS, and JavaScript.",
+    title: "Digital Agency Themes",
+    image: "https://cdn.prod.website-files.com/5e593fb060cf877cf875dd1f/67b0a97fbfee55bcb66dc3e7_1739630947401_505732060_Group-2033-20(3).webp",
+    description: "Craftly is a Agency template that's perfect for creative businesses like yours. It's got a sleek and modern design that's easy on the eyes, and it's packed with features that will help you show off your work in the best possible light.",
     highlight: "#38bdf8"
   },
   {
-    title: "Frontend Development",
-    image: "https://images.unsplash.com/photo-1581276879432-15a9b7df84f5?auto=format&fit=crop&w=800&q=80",
-    description: "Build beautiful, interactive UIs using React, Vue, or Angular with modern HTML, CSS, and JavaScript.",
+    title: "Professional Services Website Template",
+    image: "https://cdn.prod.website-files.com/5e593fb060cf877cf875dd1f/67e3470577f4ca3aab703118_21ff5ee7-ea28-4498-8b5d-f3ab6d170610.webp",
+    description: "Launch your influencer agency website effortlessly with a sleek, conversion-optimized Webflow template — built for impact, speed, and growth.",
     highlight: "#38bdf8"
   },
   {
-    title: "Frontend Development",
-    image: "https://images.unsplash.com/photo-1581276879432-15a9b7df84f5?auto=format&fit=crop&w=800&q=80",
-    description: "Build beautiful, interactive UIs using React, Vue, or Angular with modern HTML, CSS, and JavaScript.",
+    title: "Real Estate Website Template",
+    image: "https://cdn.prod.website-files.com/5e593fb060cf877cf875dd1f/684c35653387ed04153350c9_14fac391-9583-4243-a8be-3e7cab6baa07.webp",
+    description: "Manoré is a luxury real estate Webflow template with responsive design, interactive listings, CMS-driven Estates & Blog, subtle animations, elegant typography, and customizable components to showcase upscale properties.",
     highlight: "#38bdf8"
   },
   {
-    title: "Frontend Development",
-    image: "https://images.unsplash.com/photo-1581276879432-15a9b7df84f5?auto=format&fit=crop&w=800&q=80",
-    description: "Build beautiful, interactive UIs using React, Vue, or Angular with modern HTML, CSS, and JavaScript.",
+    title: " Portfolio & Agency Website Template",
+    image: "https://cdn.prod.website-files.com/5e593fb060cf877cf875dd1f/67904aca167c03593226ec45_5b6736f1-56c3-4de4-978a-eb56b24dc1dd.webp",
+    description: "Kayo is a sleek and modern agency and portfolio Wefblow Template, ideal for creative agencies, design studios, freelancers, or personal portfolios.",
     highlight: "#38bdf8"
   },
   {
-    title: "Backend APIs",
-    image: "https://images.unsplash.com/photo-1518779578993-ec3579fee39f?auto=format&fit=crop&w=800&q=80",
-    description: "Design robust REST and GraphQL APIs using Node.js, Express, Django, or Laravel.",
+    title: "Technology Website Template",
+    image: "https://cdn.prod.website-files.com/5e593fb060cf877cf875dd1f/68103c2e3341b00c89407283_cf2dd217-496b-4c29-89a6-82585abc50a3.webp",
+    description: "A calming and modern Webflow template made for mental health and wellness apps. Fully responsive, CMS-ready, and perfect for startups and self-care platforms.",
     highlight: "#facc15"
   },
   {
-    title: "Responsive Design",
-    image: "https://images.unsplash.com/photo-1581276879432-15a9b7df84f5?auto=format&fit=crop&w=800&q=80",
-    description: "Ensure seamless user experience across devices with Tailwind CSS, Flexbox, and Grid.",
+    title: "Retail & E-Commerce Website TemplateRetail & E-Commerce Website Template",
+    image: "https://cdn.prod.website-files.com/5e593fb060cf877cf875dd1f/67ca4339cd12df412817d888_d2822327-93df-4a7a-a60d-e7b533841d2f.webp",
+    description: "Vessa – A stylish Webflow template for fashion, clothing, digital products, and e-commerce websites. Elevate your online store with a sleek, modern design and seamless shopping experience.",
     highlight: "#4ade80"
   },
   {
-    title: "DevOps & Deployment",
-    image: "https://images.unsplash.com/photo-1581090700227-1e8f7c42ab8f?auto=format&fit=crop&w=800&q=80",
-    description: "Automate builds and deploy apps using Docker, CI/CD, GitHub Actions, and cloud platforms.",
+    title: "Hair & Beauty Website Template",
+    image: "https://cdn.prod.website-files.com/5e593fb060cf877cf875dd1f/67c4d225ae9a510c88bc5c98_Primary-Thumbnail-(1).jpeg",
+    description: "Luxezai is an elegant Webflow template for hair and skincare professionals. With its modern design, intuitive layout, and essential features, Luxezai helps you build a stunning online presence that attracts clients and showcases your expertise.",
     highlight: "#f87171"
   }
 ];

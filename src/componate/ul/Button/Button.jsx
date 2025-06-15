@@ -2,9 +2,9 @@ import clsx from "clsx";
 import React from "react";
 import "./Button.css";
 import { NavLink } from "react-router-dom";
-const Button = ({ variant, link, name, id, type, normal }) => {
+const Button = ({ variant, link, name, id, type, normal , handleClick }) => {
   return (
-    <button type={type} id={id} className="flex grow-1">
+    <button type={type} id={id} className="flex grow-1" onClick={handleClick}>
       {normal ? (
         <NavLink to={link} className={"w-full h-full"}>
           <div
