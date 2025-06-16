@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { NavLink, useParams } from "react-router-dom";
 import axios from "axios";
 import { toast } from "react-hot-toast"; // Optional: Use toast notifications
 import Button from "../componate/ul/Button/Button";
@@ -11,8 +11,15 @@ const ProductPage = () => {
 
   const fetchProduct = async () => {
     try {
-      const res = await axios.get(`https://fakestoreapi.com/products/${id}`);
-      setProduct(res.data);
+      const res = await axios.get(
+        `https://riya-art-infotech-backend-2-0.onrender.com/product/read`
+      );
+      const foundProduct = res.data.data.find((item) => item._id === id);
+      console.log("Fetched product:", foundProduct);
+      if (!foundProduct) {
+        throw new Error("Product not found");
+      }
+      setProduct(foundProduct);
       setLoading(false);
     } catch (error) {
       console.error("Error fetching product:", error);
@@ -22,9 +29,12 @@ const ProductPage = () => {
 
   const handlePayment = async () => {
     try {
-      const res = await axios.post(`${import.meta.env.VITE_BACKEND_HOST_URL}/api/payment/create-order`, {
-        amount: product.price,
-      });
+      const res = await axios.post(
+        `${import.meta.env.VITE_BACKEND_HOST_URL}/api/payment/create-order`,
+        {
+          amount: product.price,
+        }
+      );
       console.log("Razorpay order data:", res.data.data);
       handlePaymentVerify(res.data.data); // pass the Razorpay order data
     } catch (error) {
@@ -44,12 +54,15 @@ const ProductPage = () => {
       handler: async function (response) {
         console.log("Payment response:", response);
         try {
-          const verifyRes = await axios.post(`${import.meta.env.VITE_BACKEND_HOST_URL}/api/payment/verify`, {
-            razorpay_order_id: response.razorpay_order_id,
-            razorpay_payment_id: response.razorpay_payment_id,
-            razorpay_signature: response.razorpay_signature,
-          });
-            console.log("Verification response:", verifyRes.data);
+          const verifyRes = await axios.post(
+            `${import.meta.env.VITE_BACKEND_HOST_URL}/api/payment/verify`,
+            {
+              razorpay_order_id: response.razorpay_order_id,
+              razorpay_payment_id: response.razorpay_payment_id,
+              razorpay_signature: response.razorpay_signature,
+            }
+          );
+          console.log("Verification response:", verifyRes.data);
           if (verifyRes.data.message) {
             toast.success(verifyRes.data.message);
           }
@@ -67,39 +80,34 @@ const ProductPage = () => {
   };
 
 
-    const [mainImage, setMainImage] = useState(
-    "https://fakestoreapi.com/img/71pWzhdJNwL._AC_UL640_QL65_ML3_.jpg"
-  );
-
-  const thumbnails = [
-    "https://images.unsplash.com/photo-1505751171710-1f6d0ace5a85?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHwxMnx8aGVhZHBob25lfGVufDB8MHx8fDE3MjEzMDM2OTB8MA&ixlib=rb-4.0.3&q=80&w=1080",
-    "https://images.unsplash.com/photo-1484704849700-f032a568e944?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHw0fHxoZWFkcGhvbmV8ZW58MHwwfHx8MTcyMTMwMzY5MHww&ixlib=rb-4.0.3&q=80&w=1080",
-    "https://images.unsplash.com/photo-1496957961599-e35b69ef5d7c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHw4fHxoZWFkcGhvbmV8ZW58MHwwfHx8MTcyMTMwMzY5MHww&ixlib=rb-4.0.3&q=80&w=1080",
-    "https://images.unsplash.com/photo-1528148343865-51218c4a13e6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHwzfHxoZWFkcGhvbmV8ZW58MHwwfHx8MTcyMTMwMzY5MHww&ixlib=rb-4.0.3&q=80&w=1080",
-  ];
-
-
 
   useEffect(() => {
     fetchProduct();
   }, [id]);
 
-  if (loading) return <div className="mt-24 text-center text-lg">Loading...</div>;
-  if (!product) return <div className="mt-24 text-center text-red-500">Product not found</div>;
+  if (loading)
+    return <div className="mt-24 text-center text-lg">Loading...</div>;
+  if (!product)
+    return (
+      <div className="mt-24 text-center text-red-500">Product not found</div>
+    );
 
   return (
-     <div className="w-full mt-24 py-8 antialiased">
+    <div className="w-full mt-24 py-8 antialiased">
       <div className="container mx-auto px-4 py-8">
+        <div className="py-4">
+          <p className="font-size-sm font-primary"> <NavLink to={'/product'}>product </NavLink> / product page</p>
+        </div>
         <div className="flex flex-wrap -mx-4">
           {/* Left Section */}
           <div className="w-full md:w-1/2 px-4 mb-8">
             <img
-              src={mainImage}
+              src={product.images[0]}
               alt="Product"
               className="w-full h-auto rounded-lg border border-gray-200 mb-4"
             />
             <div className="flex gap-4 py-4 justify-center overflow-x-auto">
-              {thumbnails.map((src, index) => (
+              {product.images.map((src, index) => (
                 <img
                   key={index}
                   src={src}
@@ -121,7 +129,7 @@ const ProductPage = () => {
             </div>
 
             <div className="flex items-center mb-4">
-              {Array(5)
+              {Array(parseInt(product.rating))
                 .fill()
                 .map((_, i) => (
                   <svg
@@ -138,27 +146,38 @@ const ProductPage = () => {
                     />
                   </svg>
                 ))}
-              <span className="ml-2 text-gray-600">{product.rating?.rate} ({product.rating?.count})</span>
+              <span className="ml-2 text-gray-600">
+                {product.rating} ({product.review})
+              </span>
             </div>
 
-            <p className="text-gray-700 mb-6">
-              {product.description}
-            </p>
+            <p className="text-gray-700 mb-6">{product.description}</p>
 
             {/* Colors */}
             <div className="mb-6">
               <h3 className="text-lg font-semibold mb-2">Color:</h3>
-              <div className="flex space-x-2">
+              {/* <div className="flex space-x-2">
                 <button className="w-8 h-8 bg-black rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black"></button>
                 <button className="w-8 h-8 bg-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-300"></button>
                 <button className="w-8 h-8 bg-blue-500 rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"></button>
-              </div>
+              </div> */}
             </div>
 
             {/* Buttons */}
             <div className="flex space-x-4 mb-6">
-              <Button normal variant={"simple-blue"} name={"This Theme Customize Contact"}  handleClick={() => handlePayment()} /> {/*link={'/contact'} */}
-              <Button normal variant={"simple-border"} name={"More Watch list"} link={'/product'} />
+              <Button
+                normal
+                variant={"simple-blue"}
+                name={"This Theme Customize Contact"}
+                handleClick={() => handlePayment()}
+              />{" "}
+              {/*link={'/contact'} */}
+              <Button
+                normal
+                variant={"simple-border"}
+                name={"More Watch list"}
+                link={"/product"}
+              />
             </div>
 
             {/* Features */}

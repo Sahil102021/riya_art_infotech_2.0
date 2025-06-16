@@ -17,9 +17,10 @@ const Product = () => {
 
   const fetchData = async () => {
     try {
-      const res = await axios.get("https://fakestoreapi.com/products");
-      setApidata(res.data);
-      console.log(res.data);
+      // https://fakestoreapi.com/products
+      const res = await axios.get("https://riya-art-infotech-backend-2-0.onrender.com/product/read");
+      setApidata(res.data?.data);
+      console.log(res.data?.data);
     } catch (error) {
       console.error("Error fetching data:", error);
     }
@@ -87,12 +88,12 @@ const Product = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-5 pb-10">
           {filteredProducts.map((product) => (
             <NavLink
-              to={`/product/${product.id}`}
+              to={`/product/${product._id}`}
               key={product.id}
               className="block w-full h-full"
             >
               <CustomeCard
-                img={product.image}
+                img={product.images[0]}
                 title={product.title}
                 description={product.description}
                 price={product.price}

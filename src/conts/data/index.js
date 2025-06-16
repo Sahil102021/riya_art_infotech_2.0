@@ -139,29 +139,47 @@ export const products = [
 
 export const testimonials = [
   {
-    quote: "Build beautiful, interactive UIs using React, Vue, or Angular.",
-    name: "Frontend Development",
-    role: "HTML • CSS • JS",
-    img: "https://images.unsplash.com/photo-1581276879432-15a9b7df84f5?auto=format&fit=crop&w=800&q=80",
+    quote: "Best work in web development design.",
+    name: "Richard Smith",
+    role: "Ceo & Founder",
+    img: "https://media.istockphoto.com/id/1230749818/photo/portrait-of-smiling-male-owner-of-fashion-store-standing-in-front-of-clothing-display.jpg?s=612x612&w=0&k=20&c=xoWhF-hrQcbMEPDYncHiHF8HJX2YgmYt7T-KLCPZIpY=",
   },
   {
-    quote: "Design RESTful and GraphQL APIs with modern frameworks.",
-    name: "Backend APIs",
-    role: "Node.js • Django • Laravel",
-    img: "https://images.unsplash.com/photo-1518779578993-ec3579fee39f?auto=format&fit=crop&w=800&q=80",
+    quote: "Truly professional and exceeded expectations!",
+    name: "Emma Johnson",
+    role: "Marketing Head",
+    img: "https://www.shutterstock.com/image-photo/portrait-young-investor-banker-workplace-260nw-2364566447.jpg",
   },
   {
-    quote: "Craft responsive layouts for all screen sizes with ease.",
-    name: "Responsive Design",
-    role: "Tailwind • Flexbox • Grid",
-    img: "https://images.unsplash.com/photo-1581276879432-15a9b7df84f5?auto=format&fit=crop&w=800&q=80",
+    quote: "Great communication and timely delivery.",
+    name: "James Brown",
+    role: "Project Manager",
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLWltO_RzTpY_bKJ5glRBmGHEPbuUj3YnrVQ&s",
   },
   {
-    quote: "Automate and scale deployments with modern DevOps tools.",
-    name: "DevOps & Deployment",
-    role: "Docker • GitHub Actions • CI/CD",
-    img: "https://images.unsplash.com/photo-1581090700227-1e8f7c42ab8f?auto=format&fit=crop&w=800&q=80",
+    quote: "Our brand’s digital presence has skyrocketed!",
+    name: "Sophia Lee",
+    role: "Creative Director",
+    img: "https://images.pexels.com/photos/4347368/pexels-photo-4347368.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
   },
+  {
+    quote: "Highly recommend for any tech solution needs.",
+    name: "Michael Chen",
+    role: "Tech Consultant",
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-8KTs4wF7JLmOw8PsrRZxYnR1LLGwhe4uRRFZaSRHa2NoZm-cmTxcfYAyIiQuYj7pRJY&usqp=CAU",
+  },
+  {
+    quote: "Their UI/UX work is just phenomenal.",
+    name: "Isabella Martinez",
+    role: "Product Owner",
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgfABGq67jLuuCY3tFs7WVas6s1BY5Mv5UI8q_-ULMdajSoN_RLTvZt2aIGECnEf0Dw7A&usqp=CAU",
+  },
+  {
+    quote: "Efficient, creative, and reliable team!",
+    name: "David Wilson",
+    role: "Startup Founder",
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJLXGVOByPdPaKy75tt5W3ege8iewGhx8GD2DrND8oD1iGyNiU4jjQSL9aktTukOXSETA&usqp=CAU",
+  }
 ];
 
 
