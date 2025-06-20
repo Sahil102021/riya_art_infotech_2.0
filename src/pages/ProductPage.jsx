@@ -93,7 +93,7 @@ const ProductPage = () => {
     );
 
   return (
-    <div className="w-full mt-24 py-8 antialiased">
+    <div className="w-full mt-0 sm:mt-8 py-8 antialiased">
       <div className="container mx-auto px-4 py-8">
         <div className="py-4">
           <p className="font-size-sm font-primary"> <NavLink to={'/product'}>product </NavLink> / product page</p>
