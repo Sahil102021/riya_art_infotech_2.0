@@ -184,10 +184,12 @@ const ProductPage = () => {
             <div>
               <h3 className="text-lg font-semibold mb-2">Key Features:</h3>
               <ul className="list-disc list-inside text-gray-700">
-                <li>Industry-leading noise cancellation</li>
-                <li>30-hour battery life</li>
-                <li>Touch sensor controls</li>
-                <li>Speak-to-chat technology</li>
+                <li>Full-Stack Web Application Development</li>
+                <li>SEO-Friendly Website Development</li>
+                <li>Bug Fixing & Maintenance Services</li>
+                <li>Domain & Hosting Setup Support</li>
+                <li>Technical Consultation & Support</li>
+                <li>Admin Dashboards & Panels</li>
               </ul>
             </div>
           </div>
